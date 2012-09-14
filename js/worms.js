@@ -438,7 +438,7 @@ var ctx = Sketch.create({
 				);
 
 			// Position the worm around the center
-			offset = new Vector( random( -300, 300 ), random( -100, 100 ) )
+			offset = new Vector( random( -300, 300 ), random( -100, 100 ) );
 			worm.head.copy( center.clone().add( offset ) );
 
 			// Initial wander
