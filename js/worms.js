@@ -488,16 +488,16 @@ var ctx = Sketch.create({
 
 	draw: function() {
 
-		ctx.globalAlpha = 0.92;
+		this.globalAlpha = 0.92;
 
 		for ( var i = worms.length - 1; i >= 0; i-- ) {
-			worms[i].draw( ctx );
+			worms[i].draw( this );
 		}
 	},
 
 	toggle: function() {
-		if ( ctx.running ) ctx.stop();
-		else ctx.start();
+		if ( this.running ) this.stop();
+		else this.start();
 	},
 
 	resize: function() {
